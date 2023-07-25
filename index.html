@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cluster Tool Instructions</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles that are not available in Bootstrap */
+        .grey-box {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .box-image {
+            width: 400px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #000;
+        }
+
+        h2 {
+            color: #000;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #000;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #333;
+        }
+
+        /* New CSS class for white box with shadow */
+        .white-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 4px 4px 6px  rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="grey-box">
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\ClusterImg.png" alt="Feature Placement Matrix" class="box-image">
+            <div>
+                <h1>Cluster Tool Blogpost</h1>
+                <h5>
+                    <em>
+                    Identify potential segments and market groups
+                    </em>
+                </h5>
+                <p>
+                    The Cluster Tool is part of our comprehensive portfolio of market tools designed to automatically group your participants based on shared features and similar responses, enabling you to uncover potential market segments. This tool analyzes respondents' distribution by employing three distinct and independent methodologies. It classifies them into unique groups, helping you identify patterns and design tailored strategies based on participants' needs. With this tool you can:
+                </p>
+                <ul>
+                    <li><b>Automatically group participants</b> based on shared features and responses for market segmentation.</li>
+                    <li>Uncover <b>hidden market segments</b> through in-depth analysis using state-of-art methodologies.</li>
+                    <li>Design <b>targeted strategies</b> based on participants' unique needs and preferences.</li>
+                    <li><b>Make data-driven decisions</b> with comprehensive <b>market insights, optimizing product offerings</b> and marketing campaigns.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="white-box">
+            <h2>
+                Step 1: Prepare Your Data Set
+            </h2>
+            <h5>
+                <em>
+                    Unlocking Market Segmentation Potential
+                </em>
+            </h5>
+            
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step1.png" alt="Step 1 Image">
+            
+            <p>
+                Please ensure input data is in CSV format with the first column labeled as <b>"participant_id."</b> You can include any desired questions for the clustering exercise, except for Gabor-Granger results and Open-End answers. Additionally, you can incorporate individual preferences in the clustering exercise.
+
+                Please note that for multiple-choice questions, it's necessary to include a column with text responses instead of binary columns. In summary:
+
+                <ul>
+                    <li>Start the first column with <b>"participant_id."</b></li>
+                    <li>Include any desired questions for the clustering exercise (except for <a href="https://conjointly.com/products/gabor-granger/" rel="noopener noreferrer" target="_blank">Gabor-Granger</a> results and <a href="https://conjointly.com/guides/question-types/#question-type" rel="noopener noreferrer" target="_blank">Open-End answers</a>).</li>
+                    <li>You have the option to incorporate <a href="https://conjointly.com/guides/how-to-interpret-partworth-utilities/" rel="noopener noreferrer" target="_blank">individual preferences</a> in the clustering exercise.</li>
+                    <li>Use a column with text responses instead of binary columns for multiple-choice questions.</li>
+                    <li>Save your data set in .csv format.</li>
+                </ul>
+            </p>
+
+            <h2>
+                Step 2: Upload Your Data Set
+            </h2>
+            <h5>
+                <em> 
+                    Data Upload and Instant Cluster Analysis
+                </em>
+            </h5>
+            
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step2.png" alt="Step 2 Image">
+            
+            <p>
+                Open the cluster tool and upload your .csv file using the browse button. As soon as the file is uploaded, you can easily start performing the cluster analysis.
+            </p>
+
+            <button class="btn btn-primary" onclick="window.open('https://danielhernandez.shinyapps.io/ClusterV9/', '_blank')">Launch Shiny App</button>
+
+            <h2>
+                Step 3: Select the Parameters for the Analysis
+            </h2>
+            
+            <h5>
+                <em>
+                    State-of-art Methodologies for Effective Clustering
+                </em>
+            </h5>
+            
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step3_1.png" alt="Step 3 Image">
+            <p>
+                Conjointly cluster tool offers three independent methodologies to compute solutions based on your data and research objectives. The available methods are:
+
+                <ul>
+                    <li><b>Gaussian-Mixture Models (GMM)</b>: GMM are statistical methods for clustering data based on Gaussian distribution, varying probabilities across different setups. This method is ideal for complex and overlapping groups.</li>
+                    <li><b>K-means</b>: The most popular algorithm. K-means splits data into K clusters by assigning points to the nearest centroids. It is efficient for large datasets but limited to spherical groups; you should also -consider features to include as inputs.</li>
+                    <li><b>Hierarchical Clustering</b>: This algorithm builds a dendrogram of clusters by merging based on similarity measures. </li>
+                </ul>
+
+                You can choose the most suitable method for your analysis using the dropdown list. By default, the tool employs GMM to group participants based on their shared features. 
+                
+                Please note that each methodology offers distinct advantages, allowing you to tailor your clustering approach to best suit the nature of your data.
+
+            </p>
+
+            <h5><em>Adjusting the number of iterations</em></h5>
+
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step3_2.png" alt="Step 3 Image">
+            <p>
+                You can also adjust the number of iterations for computing cluster solutions. Each iteration involves running the algorithm multiple times and assigning the final classification based on the group with the highest assignment achieved per iteration. (i.e. the mode obtained after n iterations)
+            </p>
+
+            <h5><em>Adjusting the number of clusters</em></h5>
+
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step3_3.png" alt="Step 3 Image">
+            <p>
+                Finally, you can adjust the number of clusters using K-means and hierarchical methods. (GMM automatically computes the optimal number of groups.) Moreover, the platform suggests a maximum number of sets based on your data. This value is calculated from the average of over ten different indices. However, this suggestion should be taken as a recommendation, as you are free to exceed the recommended number of clusters as you wish.
+            </p>
+
+            <h2>Step 4: Perform the Cluster Analysis</h2>
+
+            <h5><em>Cluster distribution</em></h5>
+
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step4_1.png" alt="Step 4 Image">
+            <p>
+                The first output is a donut chart showing the clusters' distribution, that is, the participation of each group within the overall. This chart will help you understand your data's composition, identifying dominant segments, potential outliers, and areas that may require further exploration or targeted strategies. This initial output can help you comprehensively explore your data's underlying patterns and insights.
+            </p>
+
+            <h5><em>Mosaic plot to profile respondents</em></h5>
+
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step4_2.png" alt="Step 4 Image">
+
+            <p>
+                In addition, the mosaic plot allows you to profile your respondents, presenting a visual representation tailored for categorical variables (numeric values are not supported). This insightful tool aims to identify differences between groups, assuming statistical independence among variables. In the provided example, the "month or less frequently" category is represented in blue, indicating more respondents who selected this option than a scenario with no relationship between clusters (i.e., where all groups would be equally distributed across several categories). 
+
+                With the mosaic plot, you will obtain more profound insights into how categorical variables interact within your data.
+            </p>
+
+            <h2>Step 5: Export Cluster solutions</h2>
+
+            <h5><em>Perform your own analysis using the cluster solution</em></h5>
+
+            <img src="C:\Users\DH\Documents\Projects\Apps\Cluster tool\Segementation\Cluster_V3\Website\step5.png" alt="Step 5 Image">
+
+            <p>
+
+                Finally, with the cluster tool, you can download the complete dataset or only the cluster solutions, allowing you to conduct your analysis. 
+
+                When downloading the cluster solutions, you will obtain a CSV file containing all the clusters computed by the tool. This functionality offers the flexibility and freedom to delve deeper into the data, enabling you to explore additional insights, conduct customized analyses, and make data-driven decisions that align precisely with your unique research objectives.  
+                
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Include Bootstrap's JavaScript at the end of the body tag -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
